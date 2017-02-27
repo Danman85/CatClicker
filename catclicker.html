@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Catclicker</title>
+
+  <link href="../../bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class='row'>
+      <div id='catListHeader'class='col-md-2'>
+        <div class='panel panel-default'>
+          <div class="panel-heading">My cat collection:</div>
+          <ul id='catList' class='list-group'></ul>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <button id="adminButton" type="button" class="btn btn-default">Admin</button>
+          </div>
+          <div id="adminPanelBody" class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="inputCatName">Cat name</label>
+                <input type="text" class="form-control" id="inputCatName" placeholder="Cat name"></input>
+              </div>
+              <div class="form-group">
+                <label for="inputPicUrl">Picture URL</label>
+                <input type="text" class="form-control" id="inputPicUrl" placeholder="picture url"></input>
+              </div>
+              <div class="form-group">
+                <label for="inputNrClicks">Number of Clicks</label>
+                <input type="text" class="form-control" id="inputNrClicks" placeholder="number of clicks"></input>
+              </div>
+              <button type="button" id="saveInput" class="btn btn-default">Save</button>
+              <button type="button" id="resetInput" class="btn btn-default">Reset</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id='catPictures' class='col-md-10'></div>
+    </div>
+    <div class='row'>
+      <div id="adminPanel" class="col-md-2">
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../jquery-3.1.1.js"></script>
+  <script src="../../bootstrap-3.3.7/js/bootstrap.js"></script>
+  <script src="../knockout-3.4.1.js"></script>
+  <script src='catclicker.js'></script>
+</body>
+</html>
